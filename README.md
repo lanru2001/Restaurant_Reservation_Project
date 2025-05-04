@@ -90,15 +90,35 @@ This website is only for prectice and learning, not for any business use.
 # Installing
 1. Clone this repository
 ```javascript
-git clone https://github.com/Pei-wen-code/react_restaurant
+git clone https://github.com/lanru2001/Restaurant_Reservation_Project.git
 ```
 
 2.Install packages
 ```javascript
-npm install
+# NPM, Node and Yarn dependencies to run Javascript framework application (React JS and NodeJs
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install NVM LTS:
+nvm install 16
+
+# Specify  the Node Version Manager
+nvm use 16
+
+# Verify the Node.js version:
+node -v
+
+# Verify npm version:
+npm -v # Should print "10.9.2".
 ```
 
 3.Run this project locally
 ```javascript
-yarn start
+# Added yarn dev to start both frontend and backend from  node_modules
+yarn install && yarn dev
+#yarn start
 ```
+Note: The version of node the application was written is v17.
