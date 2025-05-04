@@ -252,6 +252,30 @@ const Location = styled.section`
     align-items: center;
 `;
 
+const ContactInfo = styled.div`
+  width: 80%;
+  margin: 40px 0;
+  padding: 20px;
+  background: rgba(254, 206, 53, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  
+  @media ${device.mobileXS} {
+    width: 90%;
+  }
+
+  h3 {
+    color: #a3dea2;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+`;
+
 export default function HomePage() {
     const { user } = useContext(AuthContext);
 
@@ -298,8 +322,8 @@ export default function HomePage() {
                         <SwiperSlide key={1} tag="li">
                             <Reviewer>
                                 <ReviewerImg src={reviewer_1} />
-                                <ReviwerInfo $date="12/11">
-                                    Sun Yat-Sen
+                                <ReviwerInfo $date="04/20/2025">
+                                    Smith Tom
                                 </ReviwerInfo>
                                 <ReviewerContent>This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
                                     This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
@@ -310,8 +334,8 @@ export default function HomePage() {
                         <SwiperSlide key={2} tag="li">
                             <Reviewer>
                                 <ReviewerImg src={reviewer_2} />
-                                <ReviwerInfo $date="23/4">
-                                    Duckky
+                                <ReviwerInfo $date="04/24/2025">
+                                    Robinson Sheffield
                                 </ReviwerInfo>
                                 <ReviewerContent>This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
                                     This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
@@ -322,8 +346,8 @@ export default function HomePage() {
                         <SwiperSlide key={3} tag="li">
                             <Reviewer>
                                 <ReviewerImg src={reviewer_3} />
-                                <ReviwerInfo $date="13/06">
-                                    Frog knight
+                                <ReviwerInfo $date="05/01/2025">
+                                    Fred knight
                                 </ReviwerInfo>
                                 <ReviewerContent>This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
                                     This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
@@ -334,8 +358,8 @@ export default function HomePage() {
                         <SwiperSlide key={4} tag="li">
                             <Reviewer>
                                 <ReviewerImg src={reviewer_4} />
-                                <ReviwerInfo $date="08/1">
-                                    Pei
+                                <ReviwerInfo $date="05/02/2025">
+                                    Peige Marcus
                                 </ReviwerInfo>
                                 <ReviewerContent>This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
                                     This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
@@ -346,8 +370,8 @@ export default function HomePage() {
                         <SwiperSlide key={5} tag="li">
                             <Reviewer>
                                 <ReviewerImg src={reviewer_5} />
-                                <ReviwerInfo $date="30/7">
-                                    Jasmeow
+                                <ReviwerInfo $date="04/28/2025">
+                                    Eniola  Ola
                                 </ReviwerInfo>
                                 <ReviewerContent>This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
                                     This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
@@ -358,8 +382,8 @@ export default function HomePage() {
                         <SwiperSlide key={6} tag="li">
                             <Reviewer>
                                 <ReviewerImg src={reviewer_6} />
-                                <ReviwerInfo $date="14/10">
-                                    Eggsabella
+                                <ReviwerInfo $date="04/19/2025">
+                                    Ella Richy
                                 </ReviwerInfo>
                                 <ReviewerContent>This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
                                     This is the best vegan meal I have ever had in my life! I will highly recommend you to give it a try!
@@ -371,10 +395,21 @@ export default function HomePage() {
 
                 <Location>
                     <Title data-aos="fade-up">Where are we</Title>
-                    <iframe title="ourlocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.562678993525!2d-1.537378853054072!3d52.28764098356889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487734ecb5625cad%3A0xd97b1b78e86fbb72!2z55qH5a625Yip5piO6aCT56Sm5rOJ5biC55qH5a625Yip5piO6aCT5rqr5rOJ6YKu5pS_57yW56CBOiBDVjMyIDVBQQ!5e0!3m2!1szh-TW!2suk!4v1618312658092!5m2!1szh-TW!2suk" 
-                    allowFullScreen="" 
-                    loading="lazy" 
-                    style={{width: '100%', height: '450px', border: '0'}}>
+                    <ContactInfo data-aos="fade-up">
+                        <h3>Visit Us</h3>
+                        <p>Address: Jaguar Hall, 2705 Houston Hwy, Victoria, TX 77901</p>
+                        <p>Contact us: 01-1234-56789</p>
+                        <p>Opening hours: Tuesday ~ Sunday 11:00 ~ 22:00</p>
+                        <p>Email: softwareengineeringgroupone@gmail.com</p>
+                    </ContactInfo>
+                    <iframe 
+                        title="ourlocation" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6991.8988503212395!2d-96.97829582397871!3d28.810580975972005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864266e5209f1e09%3A0x56dae0cff3720d4a!2sUHV!5e0!3m2!1sen!2sus!4v1746314495729!5m2!1sen!2sus%22" 
+                        allowFullScreen="" 
+                        loading="lazy" 
+                        style={{width: '100%', height: '450px', border: '0'}}
+                        data-aos="fade-up"
+                    >
                     </iframe>
                 </Location>
             </MainBody>

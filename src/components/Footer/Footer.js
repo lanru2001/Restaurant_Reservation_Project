@@ -24,18 +24,8 @@ const FooterBottom = styled.div`
 export default function Footer() {
   return (
     <Container>
-      <FooterTop>
-        <ResturantInfo>
-          Address: Leamington Spa CV31 3PH <br />
-          Contact us：01-1234-5678 <br />
-          Opening hours：Tuesday ~ Sunday 11:00~22:00
-          <br />
-          email：123abc456def@gmail.com
-          <br />
-        </ResturantInfo>
-      </FooterTop>
       <FooterBottom>
-        Copyright © 2021 Pei Rights Reserved. Restaurant project
+        Copyright © 2025 Azeez Jayla Justin  Rights Reserved. Restaurant project
       </FooterBottom>
     </Container>
   );
